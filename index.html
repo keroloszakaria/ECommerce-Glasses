@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>GlaShop</title>
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+      <div class="container"><span class="navbar-brand mb-0 h1">GlaShop</span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item "><a class="nav-link" data-scroll="Home" href="../index.html">Home<span class="sr-only">(current)</span></a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll="Features" href="../index.html">Features</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll="Arrival" href="../index.html">Arrivals</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll="Store" href="../index.html">Store</a></li>
+            <li class="nav-item"><a class="nav-link" data-scroll="Contact" href="../index.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="shopping "><a href="../includes/cart.html"><i class="fa fa-shopping-cart"></i><span class="circle">0</span></a></div>
+      </div>
+    </nav>
+    <header class="home scroll" id="Home">
+      <div class="wrapper">
+        <div id="cursor"></div>
+        <h1>You Can See Better</h1>
+      </div>
+    </header>
+    <section class="features scroll" id="Features">
+      <div class="container-fluid text-center">
+        <h2>Features</h2>
+        <div class="divider"><i class="far fa-star"></i></div>
+        <div class="row feature">
+          <div class="col-lg-3 col-md-6 col-sm-6 feat"><i class="fa fa-truck-moving"></i>
+            <h2 class="feature-name">Free Shipping</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 feat"><i class="fas fa-phone-alt"></i><i class="fa fa-phone fa-rotate-90"></i>
+            <h2 class="feature-name">customer service</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 feat"><i class="fa fa-exchange-alt"></i>
+            <h2 class="feature-name">returns</h2>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6 feat"><i class="fab fa-angellist"></i>
+            <h2 class="feature-name">branding</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="arrival scroll" id="Arrival">
+      <div class="container text-center">
+        <h2>Arrivals</h2>
+        <div class="divider"><i class="far fa-star"></i></div>
+        <div class="row">
+          <div class="col-6">
+            <div class="arrival-img"><img class="w-100" src="./images/brands_collections.jpg"></div>
+            <div class="arrival-content"><small>Exclusive style</small>
+              <p>Kam Dhillon</p><a class="btn" href="#Store">Shop Now</a>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="arrival-img"><img class="w-100" src="./images/brands_kd.jpg"></div>
+            <div class="arrival-content"><small>New Arrival</small>
+              <p>Ray-Ban</p><a class="btn" href="#Store">Shop Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="store scroll" id="Store">
+      <div class="container">
+        <h2>Store</h2>
+        <div class="divider"><i class="far fa-star"></i></div>
+        <div class="categories">
+          <ul class="row cat">
+            <li class="col-sm-5 col-md-2 col-lg-2  active" data-filter="all">All</li>
+            <li class="col-sm-5 col-md-2 col-lg-2  menu">Gender
+              <ul class="submenu list-unstyled">
+                <li data-filter=".men">men</li>
+                <li data-filter=".women">women</li>
+                <li data-filter=".kids">kids</li>
+              </ul>
+            </li>
+            <li class="col-sm-5 col-md-2 col-lg-2  menu">Shape
+              <ul class="submenu list-unstyled">
+                <li data-filter=".round"><img src="./images/shape/round.svg">
+                  <p>Round</p>
+                </li>
+                <li data-filter=".cat"> <img src="./images/shape/cat-eye.svg">
+                  <p>Cat-eye</p>
+                </li>
+                <li data-filter=".aviator"> <img src="./images/shape/aviator.svg">
+                  <p>Aviator</p>
+                </li>
+                <li data-filter=".oval"> <img src="./images/shape/oval.svg">
+                  <p>Oval</p>
+                </li>
+                <li data-filter=".d"> <img src="./images/shape/d-frame.svg">
+                  <p>D-Frame</p>
+                </li>
+              </ul>
+            </li>
+            <li class="col-sm-5 col-md-2 col-lg-2  menu">Size
+              <ul class="submenu list-unstyled">
+                <li data-filter=".small">Small</li>
+                <li data-filter=".medium">Medium</li>
+                <li data-filter=".large">Large</li>
+              </ul>
+            </li>
+            <li class="col-sm-5 col-md-2 col-lg-2  menu">Brand
+              <ul class="submenu list-unstyled">
+                <li data-filter=".konishi">Konishi</li>
+                <li data-filter=".dhillon">Dhillon</li>
+                <li data-filter=".rayban">Ray-Ban</li>
+                <li data-filter=".mainstay">Mainstay</li>
+              </ul>
+            </li>
+          </ul>
+          <div class="products">
+            <div class="row">
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men large d" id="product1">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product1/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Light" src="./images/color/Tortoise-Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Dark" src="./images/color/Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Teal" src="./images/color/Teal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Main And Central</a></div>
+                    <div class="col-3 price">
+                      <p>$34</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women medium cat konishi" id="product2">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product2/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Konishi</a></div>
+                    <div class="col-3 price">
+                      <p>$89</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids small round dhillon" id="product3">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product3/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Grey-Dark" src="./images/color/Grey-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Kam Dhillon</a></div>
+                    <div class="col-3 price">
+                      <p>$198</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women large aviator" id="product4">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product4/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Black active" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Yellow-Light" src="./images/color/Yellow-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Medium" src="./images/color/Tortoise-Brown-Medium.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Gold" src="./images/color/Gold.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Medium" src="./images/color/Brown-Medium.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Teal" src="./images/color/Teal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Derek Cardigan</a></div>
+                    <div class="col-3 price">
+                      <p>$90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids medium oval" id="product5">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product5/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Black color active" src="./images/color/Black.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Joseph Marc</a></div>
+                    <div class="col-3 price">
+                      <p>$49</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women cat oval d konishi" id="product6">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product6/Grey-Dark.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Grey-Dark color active" src="./images/color/Grey-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Grey Dark</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Konishi</a></div>
+                    <div class="col-3 price">
+                      <p>$40</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men round small" id="product7">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product7/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive active Charcoal color" src="./images/color/Charcoal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Joseph Marc</a></div>
+                    <div class="col-3 price">
+                      <p>$55</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women cat large rayban" id="product8">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product8/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Black active color" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Blue-Dark color" src="./images/color/Blue-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Light" src="./images/color/Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Grey-Dark" src="./images/color/Grey-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Ray-Ban</a></div>
+                    <div class="col-3 price">
+                      <p>$69</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men aviator medium mainstay" id="product9">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product9/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Lavender" src="./images/color/Lavender.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Green-Mint" src="./images/color/Green-Mint.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Light" src="./images/color/Tortoise-Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Pink-Dark" src="./images/color/Pink-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Sand-Petal" src="./images/color/Sand-Petal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Mainstay</a></div>
+                    <div class="col-3 price">
+                      <p>$35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids oval d small" id="product10">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product10/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Blue-Dark" src="./images/color/Blue-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Dark" src="./images/color/Brown-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Oakley</a></div>
+                    <div class="col-3 price">
+                      <p>$29</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men large d" id="product1">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product1/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Light" src="./images/color/Tortoise-Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Dark" src="./images/color/Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Teal" src="./images/color/Teal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Main And Central</a></div>
+                    <div class="col-3 price">
+                      <p>$34</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women medium cat konishi" id="product2">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product2/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Konishi</a></div>
+                    <div class="col-3 price">
+                      <p>$89</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids small round dhillon" id="product3">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product3/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Grey-Dark" src="./images/color/Grey-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Kam Dhillon</a></div>
+                    <div class="col-3 price">
+                      <p>$198</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women large aviator" id="product4">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product4/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Black active" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Yellow-Light" src="./images/color/Yellow-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Medium" src="./images/color/Tortoise-Brown-Medium.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Gold" src="./images/color/Gold.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Medium" src="./images/color/Brown-Medium.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Teal" src="./images/color/Teal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Derek Cardigan</a></div>
+                    <div class="col-3 price">
+                      <p>$90</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids medium oval" id="product5">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product5/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Black color active" src="./images/color/Black.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Joseph Marc</a></div>
+                    <div class="col-3 price">
+                      <p>$49</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women cat oval d konishi" id="product6">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product6/Grey-Dark.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Grey-Dark color active" src="./images/color/Grey-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Grey Dark</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Konishi</a></div>
+                    <div class="col-3 price">
+                      <p>$40</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men round small" id="product7">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product7/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev"></div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive active Charcoal color" src="./images/color/Charcoal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next"></div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Joseph Marc</a></div>
+                    <div class="col-3 price">
+                      <p>$55</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product women cat large rayban" id="product8">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product8/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Black active color" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive Blue-Dark color" src="./images/color/Blue-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Light" src="./images/color/Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Grey-Dark" src="./images/color/Grey-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Ray-Ban</a></div>
+                    <div class="col-3 price">
+                      <p>$69</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product men aviator medium mainstay" id="product9">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product9/Charcoal.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Lavender" src="./images/color/Lavender.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Green-Mint" src="./images/color/Green-Mint.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Light" src="./images/color/Tortoise-Brown-Light.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Crystal" src="./images/color/Crystal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Tortoise-Brown-Dark" src="./images/color/Tortoise-Brown-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Pink-Dark" src="./images/color/Pink-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Sand-Petal" src="./images/color/Sand-Petal.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Charcoal</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Mainstay</a></div>
+                    <div class="col-3 price">
+                      <p>$35</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-sm-12 col-md-6 col-lg-4 moreproduct product kids oval d small" id="product10">
+                <div class="product-image"><a href="./includes/view-product.html"><img class="w-100 imageChange" src="./images/products/product10/Black.jpg"></a></div>
+                <div class="product-option">
+                  <div class="c-carousel js-carousel">
+                    <div class="c-carousel__control c-carousel__control--prev js-carousel__prev">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+                      </svg>
+                    </div>
+                    <div class="c-carousel__track">
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color active Black" src="./images/color/Black.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Blue-Dark" src="./images/color/Blue-Dark.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Charcoal" src="./images/color/Charcoal.png"></div>
+                      <div class="c-carousel__item js-carousel__item"><img class="img-responsive color Brown-Dark" src="./images/color/Brown-Dark.png"></div>
+                    </div>
+                    <div class="c-carousel__control c-carousel__control--next js-carousel__next">
+                      <svg width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="color-description text-center">
+                  <div class="color-name">Black</div>
+                </div>
+                <div class="product-description">
+                  <div class="row">
+                    <div class="col-9 name"><a href="#">Oakley</a></div>
+                    <div class="col-3 price">
+                      <p>$29</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="product-sell"><a class="btn btn-primary" href="./includes/view-product.html" type="button">Try On</a></div>
+              </div>
+              <div class="col-12 load text-center"><a class="btn" href="#" id="loadMore">Load More</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact scroll" id="Contact">
+      <div class="container"><i class="fas fa-concierge-bell fa-5x"></i>
+        <h2>Contact Us</h2>
+        <div class="divider"><i class="far fa-star"></i></div>
+        <p class="lead">Have questions? We have answers</p>
+        <form>
+          <div class="form-group">
+            <input class="form-control" type="text">
+            <label>Username</label>
+          </div>
+          <div class="form-group">
+            <input class="form-control" type="email" aria-describedby="emailHelp">
+            <label>Email</label>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" rows="5"></textarea>
+            <label>Message</label>
+          </div>
+          <button class="btn" type="submit">Send</button>
+        </form>
+        <div class="social"><a href="#"><i class="fab fa-google-plus-g"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-instagram">         </i></a></div>
+      </div>
+    </section>
+  </body>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="http://localhost:35729/livereload.js"></script>
+</html>
